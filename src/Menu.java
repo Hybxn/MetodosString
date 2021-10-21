@@ -182,7 +182,7 @@ public class Menu {
     private static void opcionG() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: Mazorca, sacaremos las subcadenas usando 2 y 5.");
-        Utilidad.subcadena("Mazorca",2, 5);
+        Utilidad.subcadena("Mazorca", 2, 5);
     }
 
     private static void opcionG(Scanner scanner) {

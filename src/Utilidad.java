@@ -113,7 +113,7 @@ public class Utilidad {
         //Breve explicacion del metodo.
         System.out.println("El metodo toUpperCase() transforma los caracteres de una cadena a su version en mayuscula.");
         //Demostracion.
-        System.out.printf("La cadena %s a mayusculas es -> %s\n",s, s.toUpperCase());
+        System.out.printf("La cadena %s a mayusculas es -> %s\n", s, s.toUpperCase());
     }
 
     public static void pasaMinusculas(String s) {
@@ -123,7 +123,7 @@ public class Utilidad {
         //Breve explicacion del metodo.
         System.out.println("El metodo toLowerCase() transforma los caracteres de una cadena a su version en minuscula.");
         //Demostracion.
-        System.out.printf("La cadena %s a mayusculas es -> %s\n",s, s.toLowerCase());
+        System.out.printf("La cadena %s a mayusculas es -> %s\n", s, s.toLowerCase());
     }
 
     public static void valorEnString(int i) {
