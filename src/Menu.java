@@ -25,55 +25,66 @@ public class Menu {
     public static void ejecutarOpcion(char c) {
         switch (c) {
             case 'A':
+            case 'a':
                 System.out.println("METODO SELECCIONADO: charAt()");
                 opcionA();
                 opcionA(Principal.sc);
                 break;
             case 'B':
+            case 'b':
                 System.out.println("METODO SELECCIONADO: compareTo()");
                 opcionB();
                 opcionB(Principal.sc);
                 break;
             case 'C':
+            case 'c':
                 System.out.println("METODO SELECCIONADO: equals()");
                 opcionC();
                 opcionC(Principal.sc);
                 break;
             case 'D':
+            case 'd':
                 System.out.println("METODO SELECCIONADO: indexOf()");
                 opcionD();
                 opcionD(Principal.sc);
                 break;
             case 'E':
+            case 'e':
                 System.out.println("METODO SELECCIONADO: isEmpty()");
                 opcionE();
                 opcionE(Principal.sc);
                 break;
             case 'F':
+            case 'f':
                 System.out.println("METODO SELECCIONADO: length()");
                 opcionF();
                 opcionF(Principal.sc);
                 break;
             case 'G':
+            case 'g':
                 System.out.println("METODO SELECCIONADO: substring()");
                 opcionG();
                 opcionG(Principal.sc);
                 break;
             case 'H':
+            case 'h':
                 System.out.println("METODO SELECCIONADO: toUpperCase()");
                 opcionH();
                 opcionH(Principal.sc);
                 break;
             case 'I':
+            case 'i':
                 System.out.println("METODO SELECCIONADO: toLowerCase()");
                 opcionI();
                 opcionI(Principal.sc);
                 break;
             case 'J':
+            case 'j':
                 System.out.println("METODO SELECCIONADO: valueOf()");
                 opcionJ();
                 break;
             case 'X':
+            case 'x':
                 System.out.println("Espero que haya disfrutado de nuestra aplicacion, hasta la proxima!");
                 break;
             default:

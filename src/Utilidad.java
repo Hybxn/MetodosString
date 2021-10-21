@@ -131,6 +131,6 @@ public class Utilidad {
         System.out.println("El metodo valueOf() transforma cualquier variable a un objeto String.");
         //Demostracion.
         System.out.printf("Utilizaremos de ejemplo un entero (%d)\n", i);
-        System.out.printf("%d (%s)... TRANSFORMACION ... %s %s", i, Integer.valueOf(i).getClass(), String.valueOf(i), String.valueOf(i).getClass());
+        System.out.printf("%d (%s)... TRANSFORMACION ... %s %s\n", i, Integer.valueOf(i).getClass(), String.valueOf(i), String.valueOf(i).getClass());
     }
 }
