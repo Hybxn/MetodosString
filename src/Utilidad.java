@@ -91,6 +91,7 @@ public class Utilidad {
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
         assert i >= 0 && j >= 0 : "No se pueden introducir numeros negativos";
+        assert i <= s.length() && j <= s.length() : "Los numeros no pueden ser superiores a la longitud de la cadena.";
         //Breve explicacion del metodo.
         System.out.println("El metodo substring() se puede usar de dos maneras:\n" +
                 "1- Pasando solo un indice como parametro de entrada, devuelve el fragmento desde es indice hasta el final.\n" +
@@ -130,6 +131,6 @@ public class Utilidad {
         System.out.println("El metodo valueOf() transforma cualquier variable a un objeto String.");
         //Demostracion.
         System.out.printf("Utilizaremos de ejemplo un entero (%d)\n", i);
-        System.out.printf("%d ... TRANSFORMACION ... %s %s", i, String.valueOf(i), String.valueOf(i).getClass());
+        System.out.printf("%d (%s)... TRANSFORMACION ... %s %s", i, Integer.valueOf(i).getClass(), String.valueOf(i), String.valueOf(i).getClass());
     }
 }
