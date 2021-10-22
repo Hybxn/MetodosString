@@ -7,7 +7,7 @@ public class Menu {
 
     public static void imprimirMenu() {
         System.out.println("____________________________________________________________________________________________" +
-                "\nBienvenido al menu principal donde descubrirar diferente funciones de la clase String de Java" +
+                "\nBienvenido al menu principal donde descubrira diferente funciones de la clase String de Java" +
                 "\n| A- Metodo charAt()" +
                 "\n| B- Metodo compareTo()" +
                 "\n| C- Metodo equals()" +
@@ -102,8 +102,6 @@ public class Menu {
     private static void opcionA(Scanner scanner) {
         System.out.println("Ahora es tu turno:" +
                 "\nIntroduce un String y un numero, en este mismo orden");
-        //String s = scanner.nextLine();
-        //int i = scanner.nextInt();
         Utilidad.letraEn(scanner.nextLine(), scanner.nextInt());
     }
 
@@ -116,8 +114,6 @@ public class Menu {
     private static void opcionB(Scanner scanner) {
         System.out.println("Ahora es tu turno:" +
                 "\nIntroduce dos Strings en LINEAS SEPARADAS");
-        //String s1 = scanner.nextLine();
-        //String s2 = scanner.nextLine();
         Utilidad.compararCadenas(scanner.nextLine(), scanner.nextLine());
     }
 
@@ -132,8 +128,6 @@ public class Menu {
     private static void opcionC(Scanner scanner) {
         System.out.println("Ahora es tu turno:" +
                 "\nIntroduce dos Strings en LINEAS SEPARADAS");
-        //String s1 = scanner.nextLine();
-        //String s2 = scanner.nextLine();
         Utilidad.sonEquivalentes(scanner.nextLine(), scanner.nextLine());
     }
 
@@ -148,8 +142,6 @@ public class Menu {
     private static void opcionD(Scanner scanner) {
         System.out.println("Ahora es tu turno:" +
                 "\nIntroduce dos Strings en LINEAS SEPARADAS");
-        //String s1 = scanner.nextLine();
-        //String s2 = scanner.nextLine();
         Utilidad.indiceDe(scanner.nextLine(), scanner.nextLine().charAt(0));
     }
 
