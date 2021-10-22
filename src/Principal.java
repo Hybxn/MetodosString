@@ -14,6 +14,5 @@ public class Principal {
             opcion = sc.next().charAt(0);
             Menu.ejecutarOpcion(opcion);
         } while (opcion != 'x' && opcion != 'X');
-
     }
 }

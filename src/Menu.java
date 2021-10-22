@@ -96,6 +96,8 @@ public class Menu {
     private static void opcionA() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos la palabra Mazorca como String y 2 como indice");
+        //Breve explicacion del metodo charAt().
+        System.out.println("El metodo charAt(int i) devuelve el char ubicado en dicho indice(i).");
         Utilidad.letraEn("Mazorca", 2);
     }
 
@@ -103,11 +105,15 @@ public class Menu {
         System.out.println("Ahora es tu turno:" +
                 "\nIntroduce un String y un numero, en este mismo orden");
         Utilidad.letraEn(scanner.nextLine(), scanner.nextInt());
+        scanner.nextLine();
     }
 
     private static void opcionB() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos dos Strings: Mazorca y Abanico");
+        //Breve explicacion del metodo compareTo().
+        System.out.println("El metodo compareTo(String otraCadena) compara ambas cadenas " +
+                "para indicar cual estaria ubicada antes en orden segun sus valores en UNICODE.");
         Utilidad.compararCadenas("Mazorca", "Abanico");
     }
 
@@ -120,6 +126,8 @@ public class Menu {
     private static void opcionC() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos dos Strings: Mazorca y Abanico");
+        //Breve explicacion del metodo equals.
+        System.out.println("El metodo equals(String otraCadena) comprueba si dos cadenas son iguales o no.");
         Utilidad.sonEquivalentes("Mazorca", "Abanico");
         System.out.println("Ahora introduciremos dos Strings iguales: Mazorca y Mazorca");
         Utilidad.sonEquivalentes("Mazorca", "Mazorca");
@@ -134,6 +142,10 @@ public class Menu {
     private static void opcionD() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: Mazorca el caracter Z");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo indexOf(char caracter) sirve para saber la posicion del caracter introducido" +
+                "en la cadena.\nOJO, si el caracter esta repetido en la cadena, solo nos devolverá el indice de su" +
+                "primera aparicion.");
         Utilidad.indiceDe("Mazorca", 'z');
         System.out.println("Ahora buscaremos un caracter que no este en Mazorca");
         Utilidad.indiceDe("Mazorca", 'q');
@@ -148,6 +160,8 @@ public class Menu {
     private static void opcionE() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: Mazorca ");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo isEmpty() nos indica si una cadena esta vacia o no.");
         Utilidad.estaVacio("Mazorca");
         System.out.println("Ahora usaremos un String vacio.(\"\")");
         Utilidad.estaVacio("");
@@ -162,6 +176,8 @@ public class Menu {
     private static void opcionF() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: Mazorca ");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo length() nos indica el numero de caracteres .");
         Utilidad.longitud("Mazorca");
     }
 
@@ -174,6 +190,10 @@ public class Menu {
     private static void opcionG() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: Mazorca, sacaremos las subcadenas usando 2 y 5.");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo substring() se puede usar de dos maneras:\n" +
+                "1- Pasando solo un indice como parametro de entrada, devuelve el fragmento desde es indice hasta el final.\n" +
+                "2- Pasando dos indices devuelve el fragmento comprendido entre ambos indices.");
         Utilidad.subcadena("Mazorca", 2, 5);
     }
 
@@ -181,12 +201,15 @@ public class Menu {
         System.out.println("Ahora es tu turno:" +
                 "\nIntroduce un String, y dos numeros siempre menores a este.");
         Utilidad.subcadena(scanner.nextLine(), scanner.nextInt(), scanner.nextInt());
+        scanner.nextLine();
     }
 
 
     private static void opcionH() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: Mazorca y pasaremos todos sus caracteres a mayusculas");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo toUpperCase() transforma los caracteres de una cadena a su version en mayuscula.");
         Utilidad.pasaMayusculas("Mazorca");
     }
 
@@ -199,6 +222,8 @@ public class Menu {
     private static void opcionI() {
         System.out.println("Empecemos con un ejemplo:" +
                 "\nusaremos un String: MAzoRCA y pasaremos todos sus caracteres a minusculas.");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo toLowerCase() transforma los caracteres de una cadena a su version en minuscula.");
         Utilidad.pasaMinusculas("MAzoRCA");
     }
 
@@ -211,6 +236,8 @@ public class Menu {
     private static void opcionJ() {
         System.out.println("Esta opcion es la unica que SOLO incluye ejemplo:" +
                 "\nusaremos un dato de tipo int (Integer), concretamente el 10 ");
+        //Breve explicacion del metodo.
+        System.out.println("El metodo valueOf() transforma cualquier variable a un objeto String.");
         Utilidad.valorEnString(10);
     }
 

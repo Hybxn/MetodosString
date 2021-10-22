@@ -8,9 +8,7 @@ public class Utilidad {
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
         assert i >= 0 : "Error, el indice no puede ser un numero negativo";
-        //Breve explicacion del metodo charAt().
-        System.out.println("El metodo charAt(int i) devuelve el char ubicado en dicho indice(i).");
-        //Demostracion.
+        //Ejecucion del metodo.
         if (i < s.length()) {
             System.out.printf("La letra en el indice nª%d de la cadena: \"%s\" es: %c\n", i, s, s.charAt(i));
         } else
@@ -22,10 +20,7 @@ public class Utilidad {
         assert s1 != null || s2 != null : "Error, no puede introducir valores nulos.";
         assert !s1.isEmpty() || !s1.isBlank()
                 || !s2.isEmpty() || !s2.isBlank() : "Error, las cadenas no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo compareTo().
-        System.out.println("El metodo compareTo(String otraCadena) compara ambas cadenas " +
-                "para indicar cual estaria ubicada antes en orden segun sus valores en UNICODE.");
-        //Demostracion.
+        //Ejecucion del metodo.
         if (s1.compareTo(s2) > 0)
             System.out.printf("La cadena %s es mayor que la cadena %s.\n", s1, s2);
         else if (s1.compareTo(s2) < 0)
@@ -39,9 +34,7 @@ public class Utilidad {
         assert s1 != null || s2 != null : "Error, no puede introducir valores nulos.";
         assert !s1.isEmpty() || !s1.isBlank()
                 || !s2.isEmpty() || !s2.isBlank() : "Error, las cadenas no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo equals.
-        System.out.println("El metodo equals(String otraCadena) comprueba si dos cadenas son iguales o no.");
-        //Demostracion.
+        //Ejecucion del metodo.
         if (s1.equals(s2))
             System.out.println("Las cadenas son iguales.");
         else
@@ -52,11 +45,7 @@ public class Utilidad {
         //Comprobacion de parametros.
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo.
-        System.out.println("El metodo indexOf(char caracter) sirve para saber la posicion del caracter introducido" +
-                "en la cadena.\nOJO, si el caracter esta repetido en la cadena, solo nos devolverá el indice de su" +
-                "primera aparicion.");
-        //Demostracion.
+        //Ejecucion del metodo.
         if (s.indexOf(c) >= 0)
             System.out.printf("El primer indice de la letra %c en la cadena %s es: %d\n", c, s, s.indexOf(c));
         else
@@ -67,9 +56,7 @@ public class Utilidad {
         //Combrobacion de parametros.
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo.
-        System.out.println("El metodo isEmpty() nos indica si una cadena esta vacia o no.");
-        //Demostracion
+        //Ejecucion del metodo
         if (s.isEmpty())
             System.out.printf("La cadena %s es una cadena sin ningun caracter en ella.\n", s);
         else
@@ -80,9 +67,7 @@ public class Utilidad {
         //Comprobacion de parametros.
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo.
-        System.out.println("El metodo length() nos indica el numero de caracteres .");
-        //Demostracion.
+        //Ejecucion del metodo.
         System.out.printf("La longitud de la cadena %s es: %d \n", s, s.length());
     }
 
@@ -92,13 +77,9 @@ public class Utilidad {
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
         assert i >= 0 && j >= 0 : "No se pueden introducir numeros negativos";
         assert i <= s.length() && j <= s.length() : "Los numeros no pueden ser superiores a la longitud de la cadena.";
-        //Breve explicacion del metodo.
-        System.out.println("El metodo substring() se puede usar de dos maneras:\n" +
-                "1- Pasando solo un indice como parametro de entrada, devuelve el fragmento desde es indice hasta el final.\n" +
-                "2- Pasando dos indices devuelve el fragmento comprendido entre ambos indices.");
-        //Demostracion.
+        //Ejecucion del metodo.
         System.out.println("Opcion 1, solo un parametro de entrada.");
-        System.out.printf("Cadena -> %s, subcande -> %s\n", s, s.substring(i));
+        System.out.printf("Cadena -> %s, subcandena -> %s\n", s, s.substring(i));
         System.out.println();
         if (i > j)
             System.out.printf("Cadena -> %s, subcandena -> %s\n", s, s.substring(j, i));
@@ -110,9 +91,7 @@ public class Utilidad {
         //Comprobacion de parametros.
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo.
-        System.out.println("El metodo toUpperCase() transforma los caracteres de una cadena a su version en mayuscula.");
-        //Demostracion.
+        //Ejecucion del metodo.
         System.out.printf("La cadena %s a mayusculas es -> %s\n", s, s.toUpperCase());
     }
 
@@ -120,16 +99,12 @@ public class Utilidad {
         //Comprobacion de parametros.
         assert s != null : "Error, no puede introducir valores nulos.";
         assert !s.isEmpty() || !s.isBlank() : "Error, la cadena no puede estar vacia o ser espacion en blanco.";
-        //Breve explicacion del metodo.
-        System.out.println("El metodo toLowerCase() transforma los caracteres de una cadena a su version en minuscula.");
-        //Demostracion.
+        //Ejecucion del metodo.
         System.out.printf("La cadena %s a mayusculas es -> %s\n", s, s.toLowerCase());
     }
 
     public static void valorEnString(int i) {
-        //Breve explicacion del metodo.
-        System.out.println("El metodo valueOf() transforma cualquier variable a un objeto String.");
-        //Demostracion.
+        //Ejecucion del metodo.
         System.out.printf("Utilizaremos de ejemplo un entero (%d)\n", i);
         System.out.printf("%d (%s)... TRANSFORMACION ... %s %s\n", i, Integer.valueOf(i).getClass(), String.valueOf(i), String.valueOf(i).getClass());
     }
