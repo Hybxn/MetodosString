@@ -101,9 +101,9 @@ public class Utilidad {
         System.out.printf("Cadena -> %s, subcande -> %s\n", s, s.substring(i));
         System.out.println();
         if (i > j)
-            System.out.printf("Cadena -> %s, subcandena -> %s", s, s.substring(j, i));
+            System.out.printf("Cadena -> %s, subcandena -> %s\n", s, s.substring(j, i));
         else
-            System.out.printf("Cadena -> %s, subcandena -> %s", s, s.substring(i, j));
+            System.out.printf("Cadena -> %s, subcandena -> %s\n", s, s.substring(i, j));
     }
 
     public static void pasaMayusculas(String s) {

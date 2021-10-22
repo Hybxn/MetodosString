@@ -19,7 +19,7 @@ public class Menu {
                 "\n| I- Metodo toLowerCase()" +
                 "\n| J- Metodo estatico valueOf()" +
                 "\n| X- Cerrar la aplicacion." +
-                "Introduzca el caracter correspondiente a la parte que desee acceder :)");
+                "Introduzca el caracter correspondiente a la parte que desee acceder :");
     }
 
     public static void ejecutarOpcion(char c) {
@@ -141,7 +141,7 @@ public class Menu {
 
     private static void opcionD(Scanner scanner) {
         System.out.println("Ahora es tu turno:" +
-                "\nIntroduce dos Strings en LINEAS SEPARADAS");
+                "\nIntroduce un String y un char en LINEAS SEPARADAS");
         Utilidad.indiceDe(scanner.nextLine(), scanner.nextLine().charAt(0));
     }
 
